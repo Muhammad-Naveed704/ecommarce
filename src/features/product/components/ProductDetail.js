@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { RadioGroup } from '@headlessui/react'
+import { Link } from 'react-router-dom';
 
 const product = {
   name: 'Basic Tee 6-Pack',
@@ -263,13 +264,14 @@ export default function ProductDetail() {
                   </div>
                 </RadioGroup>
               </div>
-
+<Link to="/cart">
               <button
                 type="submit"
                 className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
                 Add To Cart
               </button>
+                  </Link>
             </form>
           </div>
 
